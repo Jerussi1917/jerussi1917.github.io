@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario Curso Inscripcion</title>
+	<style>
+		table, td {
+			font-family: verdana;
+			border: 3px solid black; 
+			border-collapse: collapse; 
+			color: yellow;
+		}
+		td {
+				padding: 5px;
+				text-align: left;
+		}
+		h3 {
+				font-family: courier;
+				color: black;
+				font-size: 200%;
+		}
+		body{
+			background-color: #76737C;
+		}
+		a {
+			background-color: #f44336;
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+</style>
+</head>
+<body>
+<center><h3>Registra tus datos - Cursos Extracurriculares</h3>
+<form method="post">
+	<table>
+		<tr>
+		<td>Nombre del solicitante</td>
+		<td><input type="text" name="nom" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Fecha de nacimiento</td>
+		<td><input type="date" name="fecha" required="true"></td> 
+		</tr>
+		<td>Sexo:</td>
+		<td>
+		<select name="sexo" required="true">
+		<option></option>
+		<option value="cal">Hombre</option>
+		<option value="ropa">Mujer</option>	
+		</select></td></tr>
+		<td>Edad:</td>
+		<td><input type="number" name="edad" required="true"></td> 
+		</tr>
+		<td>Teléfono:(123-123-1234):</td>
+		<td><input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td> 
+		</tr>
+		<td>Dirección Actual:</td>
+		<td><input type="text" name="direct" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Correo Electronico:</td>
+		<td><input type="email" name="ema"></td>
+		</tr>
+		<td>Cursos disponibles:</td>
+		<td>
+		<select name="cursos" required="true">
+		<option></option>
+		<option value="cal">Ingles</option>
+		<option value="ropa">Matematicas Avanzadas</option>	
+		<option value="ropa">Basquetball</option>
+		<option value="ropa">Futbol</option>
+		<option value="ropa">Dibujo con gises</option>	
+		<option value="ropa">Cantó</option>		
+		</select></td></tr>
+		<td><center><input type="submit" value="Guardar"></td></center> 
+		<td><center><input type="reset" value="Borrar"></td></center>
+		</tr>
+	</table>
+</form><br>
+<a href="../index.html">Regresar</a></center>
+</body> 
+</html>

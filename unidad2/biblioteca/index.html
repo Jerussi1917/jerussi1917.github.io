@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulario de Registro de Libros</title>
+</head>
+<body>
+  <center>  <h1>Registro de Libros</h1>
+    <form action="procesar_registro.php" method="post">
+        <label for="nombre_libro">Nombre del Libro:</label>
+        <br><input type="text" id="nombre_libro" name="nombre_libro" required><br>
+
+        <label for="autores">Autor(es):</label>
+        <input type="text" id="autores" name="autores" required><br>
+
+        <label for="editorial">Editorial:</label>
+        <input type="text" id="editorial" name="editorial" required><br>
+
+        <label for="anio">Año:</label>
+        <input type="number" id="anio" name="anio" min="2015" max="2020" required><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="México">México</option>
+            <option value="España">España</option>
+            <option value="Cuba">Cuba</option>
+        </select><br>
+
+        <label for="paginas">Páginas:</label>
+        <input type="number" id="paginas" name="paginas" min="1" required><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" min="100" required><br>
+
+        <label for="edicion">Edición:</label>
+        <input type="text" id="edicion" name="edicion" required><br>
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" pattern="[0-9]{13}" required><br>
+
+        <input type="submit" value="Registrar">
+    </form></center>
+</body>
+</html>

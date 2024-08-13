@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Zapateria</title>
+</head>
+<body>
+<br>
+<center>
+	<h4>Registro de Zapateria</h4>
+	<form action="" method="get">
+		Modelo:
+		<input type="text" name="modelo" required="true" maxlength="50"><br><br>
+		Marca:
+		<input type="text" name="marca" required="true" maxlength="50"><br><br>
+		Tipo de calzado:
+		<input type="text" name="tipocalzado" required="true" maxlength="50"><br><br>
+		Color:
+		<select name="color" required="true">
+			<option></option>
+			<option value="negro">Negro</option>
+			<option value="camel">Camel</option>		
+		</select><br><br>
+		Talla:
+		<input type="number" name="talla" required="true" required min="1" step="1"><br><br>
+		Precio:
+		<input type="number" name="precio" required="true" min="100" max="10000"><br><br>
+		Descripción:
+		<input type="text" name="desc" required="true" maxlength="100"><br><br>
+		<input type="submit" name="" value="Guardar">
+		<input type="reset" name="" value="Borrar">
+	</form>
+<br>
+<a href="index.html">Regresar</a>
+</center>
+</body>
+</html>

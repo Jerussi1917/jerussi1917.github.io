@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario Cita medica</title>
+	<style>
+		table, td {
+			font-family: verdana;
+			border: 3px solid black; 
+			border-collapse: collapse; 
+			color: red;
+		}
+		td {
+				padding: 5px;
+				text-align: left;
+		}
+		h3 {
+				font-family: courier;
+				color: gray;
+				font-size: 200%;
+		}
+		body{
+			background-color: #E7DBAF;
+		}
+		a {
+			background-color: #f44336;
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+</style>
+</head>
+<body>
+<center><h3>Registra tus datos - Hospital Público Nacional</h3>
+<form method="post">
+	<table>
+		<tr>
+		<td>Nombre del paciente:</td>
+		<td><input type="text" name="nom" required="true" maxlength="40"></td> 
+		</tr>
+		<tr>
+		<td>Fecha de la cita</td>
+		<td><input type="date" name="fecha" required="true"></td> 
+		</tr>
+		<tr>
+		<td>Nombre del Médico:</td>
+		<td><input type="text" name="nomdoc" required="true" maxlength="40"></td> 
+		</tr>
+		<tr>
+		<td>Especialidad del Médico:</td>
+		<td><input type="text" name="espdoc" required="true" maxlength="40"></td> 
+		</tr>
+		<tr>
+		<td>Centro médico:</td>
+		<td><input type="text" name="hospital" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Ciudad:</td>
+		<td><input type="text" name="ciudad" required="true" maxlength="40"></td> 
+		</tr>
+		<tr>
+		<td>Motivo de la cita:</td>
+		<td><input type="text" name="motivo" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Observaciones:</td>
+		<td><input type="text" name="observaciones" required="true" maxlength="40"></td> 
+		</tr>
+		<td><center><input type="submit" value="Guardar"></td></center> 
+		<td><center><input type="reset" value="Borrar"></td></center>
+		</tr>
+	</table>
+</form><br>
+<a href="index.html">Regresar</a></center>
+</body> 
+</html>

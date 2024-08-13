@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario Tienda</title>
+	<style>
+		table, td {
+			font-family: Arial;
+			border: 2px solid black; 
+			border-collapse: collapse; 
+			color: black;
+		}
+		td {
+				padding: 5px;
+				text-align: left;
+		}
+		h3 {
+				font-family: courier;
+				color: white;
+				font-size: 200%;
+		}
+		body{
+			background-color: #718F8A;
+		}
+		a {
+			background-color: #f44336;
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+</style>
+</head>
+<body>
+<center><h3>Registra tus datos - Servicios de Venta en Linea</h3>
+<form method="post">
+	<table>
+		<tr>
+		<td>Usuario:</td>
+		<td><input type="text" name="nom" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Correo:</td>
+		<td><input type="email" name="ema"></td>
+		</tr>
+		<td>Teléfono de contacto:(123-123-1234):</td>
+		<td><input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td> 
+		</tr>
+		<td>Dirección:</td>
+		<td><input type="text" name="direct" required="true" maxlength="40"></td> 
+		</tr>
+		<td>Categoria de producto:</td>
+		<td>
+		<select name="tipoproduct" required="true">
+		<option></option>
+		<option value="cal">Calzado</option>
+		<option value="ropa">Ropa</option>
+		<option value="juguetes">Juguetes</option>	
+		</select></td>
+		</tr>
+		<td>Fecha de envio</td>
+		<td><input type="date" name="fecha" required="true"></td> 
+		</tr>
+		<td rowspan="4">Metodo de pago</td>
+		</tr>
+		<tr>
+		<td><input type="checkbox" name="uso1" value=" computadora">Transferencia Bancaria</td>
+		</tr>
+		<tr>
+		<td><input type="checkbox" name="uso2" value="tablet">Tarjeta de crédito</td>
+		</tr>
+		<tr>
+		<td><input type="checkbox" name="uso3" value="celular">PayPal</td> 
+		</tr>
+		<td><center><input type="submit" value="Guardar"></td></center> 
+		<td><center><input type="reset" value="Borrar"></td></center>
+		</tr>
+	</table>
+</form><br>
+<a href="../index.html">Regresar</a></center>
+</body> 
+</html>
